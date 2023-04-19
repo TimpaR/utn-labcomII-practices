@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrado total con flex</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 2px;
+            font-family: sans-serif;
+            min-height: 100vh;
+        }
+
+        .main .sidebar .main .contenido{
+            padding: 12px 24px;
+            height: 100vh;
+        }
+
+        .main .sidebar {
+            background-color: rgb(133, 215, 239);
+            flex: 1;
+        }
+
+        .main .contenido {
+            background-color: rgb(193, 219, 210);
+            flex: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">contenido lateral</div>
+        <div class="contenido">Esto seria el contenido principal</div>
+    </div>
+</body>
+</html>
