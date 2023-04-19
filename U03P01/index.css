@@ -1,0 +1,71 @@
+* {
+    font-family: sans-serif;
+   /* background-color: rgb(245, 245, 245); */
+    /*margin-top: 30px;
+    margin-bottom: 30px;*/
+}
+html{
+    background-color: rgb(255, 255, 255);
+}
+h1 {
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lista {
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    width: 40%;
+    list-style-type: none;
+    padding-bottom: 10px;
+    /* preguntar si esto esta bien */
+}
+
+a {
+    font-weight: bold;
+    /*color: blue;*/
+}
+
+#verde {
+    color: green;
+}
+
+/*.lista #naranja {
+    color: orange;
+}*/
+
+/*otra forma de escribirlo*/
+.lista li a{
+    color: orange;
+}
+
+li.colorverde, li.colorverde a {
+    color: green;
+}
+
+li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
