@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10: A toda página</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+            height: 100vmin;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 24px;
+            height: 24px;
+            background-color: #D08700;
+            padding: 20px;
+        }
+
+        .cuerpo {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            text-align: center;
+        }
+
+        .lateral {
+            flex: 1;
+            background-color: #4D4F52;
+            color: white;
+            padding-top: 24px;
+        }
+
+        .centro {
+            flex: 2;
+            background-color: white;
+            padding-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo"><b>Titulo de la pagina</b></div>
+    <div class="cuerpo">
+        <div class="lateral">Lateral izquierdo</div>
+        <div class="centro">Zona central</div>
+        <div class="lateral">Lateral derecho</div>
+    </div>
+</body>
+</html>

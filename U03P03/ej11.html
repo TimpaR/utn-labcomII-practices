@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11: Componente Lista de Miniaturas </title>
+    <style>
+        .list-item {
+            display: flex;
+        }
+
+        .list-item__image {
+            flex-shrink: 0;
+        }
+
+        .list .list-item__content {
+            flex-grow: 1;
+        }
+
+        body {
+            background-color: #0e7c74;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+
+        /* List component */
+
+        .list {
+            list-style: none;
+            background-color: white;
+            margin: 10;
+            padding: 20px;
+            border-radius: 3px;
+            box-shadow:  10px 6px rgba(0,0,0,0.15);
+        }
+
+        .list .list-item {
+            display: flex;
+            padding: 10px 5px;
+        }
+
+        /*list item image wrapper*/
+        .list .list-item__image {
+            flex-shrink: 0;
+        }
+
+        /*list item content*/
+        .list .list-item__content {
+            flex-grow: 1;
+            padding: 10px 30px;
+        }
+
+        .list .list-item__image img {
+            border-radius: 15px;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.55);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li class="list-item">
+            <div class="list-item__content">
+                <h4>Name Surname</h4>
+                <p>Info</p>
+            </div>
+            <div class="list-item__image">
+               <!-- <img src="" alt="Image"> -->
+            </div>
+        </li>
+    </ul>
+    <div class="list-wrapper">
+        <ul class="list">
+            <!--Flexbox list item-->
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <h4> Linda Hart </h4>
+                    <p> 6765 Shady Ln Dr </p>
+                </div>
+            </li>
+            <!--Flexbox list item-->
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <h4> Roger Medina </h4>
+                    <p> 2420 Paddock Way </p>
+                </div>
+            </li>
+            <!--Flexbox list item-->
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <h4> Dean Sullivan </h4>
+                    <p> 6727 Airplane Ave </p>
+                </div>
+            </li>
+            <!--Flexbox list item-->
+            <li class="list-item">
+                <div class="list-item__image">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg" alt="Thumbnail">
+                </div>
+                <div class="list-item__content">
+                    <h4> Elizabeth Austin </h4>
+                    <p> 6685 Blossom Hill Rd </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

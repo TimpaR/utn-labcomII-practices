@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9: Layout de dos columnas con filas </title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: sans-serif;
+            display: flex;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        .izquierda {
+            background-color: #0e7c74;
+            color: white;
+            flex: 2;
+            padding: 12px;
+        }
+
+        .derecha{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fila {
+            flex: 1 1 100%;
+            border: 1px solid lightgray;
+            padding: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="izquierda">
+        <p>Columna izquierda</p>
+     </div>
+    <div class="derecha">
+         <div class="fila">
+            <p>Derecha parte alta</p>
+        </div>
+         <div class="fila">
+            <p>Derecha parte baja</p>
+        </div>
+    </div>
+</body>
+</html>
