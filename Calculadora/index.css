@@ -3,10 +3,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     text-align: center;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 header h2 {
@@ -14,6 +20,7 @@ header h2 {
     color: white;
     padding: 20px;
     border-radius: 25px;
+    margin-top: 0;
 }
 
 header h2:hover {
@@ -41,10 +48,29 @@ footer {
     padding: 40px;
     border-radius: 25px;
     color: white;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 footer:hover {
     background-color: white;
     color: blue;
     transition: 1.5s;
+}
+
+div h2 {
+    margin-top: 50px;
+}
+
+@media (max-width: 780px) {
+    header {
+        margin: 0 25% 0 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    header h2{
+        min-width: max-content;
+        margin: 0 0 0 0;
+    }
 }

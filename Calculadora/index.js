@@ -13,10 +13,10 @@ function costo() {
     var a;
     var b;
     const servicio = 102;
-    var user = document.getElementById("usuario").value;
+    var user = document.getElementById("usuario");
     var domi = document.getElementById("domicilio").value;
     var cantidad = document.getElementById("cantidadKwh").value;
-    if (user == "residencial") {
+    if (user.checked) {
         a = 0.21;
     } else {
         a = 0.27;
@@ -38,5 +38,6 @@ function costo() {
     }
 
     var total = Number((servicio + cantidad * b * (1 + a)).toFixed(2));
-    alert("El total es $" + total)
+
+    document.getElementById("respuesta").innerText = "El total es $" + total
 }
