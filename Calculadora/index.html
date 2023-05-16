@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costo de Energía eléctrica</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h2>Calculadora de la EPE</h2>
+        <img src="https://www.epe.santafe.gov.ar/institucional/sites/default/files/inline-images/logo-epe-empresa.png"
+            alt="logoEpe" width="300px">
+    </header>
+    <form action="">
+        <div>
+            <label for="usuario"></label>
+            <select name="usuario" id="usuario">
+                <option value="1">Tipo de usuario</option>
+                <option value="residencial">Residencial</option>
+                <option value="industrial">Industrial</option>
+            </select>
+            <label for="domicilio"></label>
+            <select name="domicilio" id="domicilio">
+                <option value="1">Zona del domicilio</option>
+                <option value="centro">Distrito Centro</option>
+                <option value="sur">Distrito Sur</option>
+                <option value="oeste">Distrito Oeste</option>
+                <option value="norte">Distrito Norte</option>
+            </select>
+        </div>
+        <div>
+            <label for="kwh">Cantidad de kWh del mes: </label>
+            <input type="number" id="cantidadKwh" name="cantidadKwh">
+            <input type="button" value="Calcular" onclick="validacion()">
+            <h2></h2>
+        </div>
+    </form>
+    <footer>© 2023 Empresa Provincial de la Energía de Santa Fe
+    </footer>
+</body>
+
+</html>

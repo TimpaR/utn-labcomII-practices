@@ -1,0 +1,50 @@
+* {
+    background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+header h2 {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+header h2:hover {
+    background-color: white;
+    color: blue;
+    transition: 1.5s;
+}
+
+form {
+    padding-top: 25px;
+    text-align: center;
+}
+
+form div {
+    padding-bottom: 90px;
+}
+
+#cantidadKwh {
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    padding: 40px;
+    border-radius: 25px;
+    color: white;
+}
+
+footer:hover {
+    background-color: white;
+    color: blue;
+    transition: 1.5s;
+}
